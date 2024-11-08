@@ -2,8 +2,8 @@
 
 namespace CleanArchitecture.Application.Interfaces
 {
-    public interface IDatabaseService
+    public interface IUserRepo
     {
-        List<User> GetUsers();
+        Task<Guid> CreateUser(User user);
     }
 }
